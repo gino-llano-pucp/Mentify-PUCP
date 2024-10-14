@@ -1,0 +1,14 @@
+Administrador
+a20191088@pucp.edu.pe
+c551a1c2dc
+
+Cambiar nombre de base de datos
+en .env
+
+Subnet Availability Zone: us-east-1b
+> Select Existing Group
+ec2-rds-5
+launch-wizard-1
+> 30 GiB
+
+Inserta rol 6 al id con usuario 1

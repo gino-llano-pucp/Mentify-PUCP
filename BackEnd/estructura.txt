@@ -1,0 +1,44 @@
+Initial database name: mentoring
+username: admin
+password: hV54dclqgKwYkMB3uq1d
+Endpoint: mentoring.cqaz4i5mrupx.us-east-1.rds.amazonaws.com 
+
+project-root/
+│
+├── config/
+│   └── database.js          # Configuración de la base de datos (sequelize)
+│
+├── controllers/
+│   ├── userController.js   # Controladores para la lógica de usuario
+│   └── ...                 # Otros controladores (si es necesario)
+│
+├── models/
+│   ├── User.js              # Definición del modelo de usuario (sequelize)
+│   └── ...                  # Otros modelos (si es necesario)
+│
+├── routes/
+│   ├── userRoutes.js        # Definición de rutas para el usuario
+│   └── ...                  # Otros archivos de rutas (si es necesario)
+│
+├── services/
+│   ├── userService.js       # Lógica de negocio para operaciones de usuario
+│   └── ...                  # Otros servicios (si es necesario)
+│
+├── views/                   # Vistas (si estás usando un motor de plantillas como EJS)
+│   ├── user/                # Vistas relacionadas con usuarios
+│   │   ├── index.ejs        # Vista de lista de usuarios
+│   │   ├── show.ejs         # Vista de detalle de usuario
+│   │   ├── edit.ejs         # Vista de edición de usuario
+│   │   └── create.ejs       # Vista de creación de usuario
+│   └── ...                  # Otras vistas (si es necesario)
+│
+├── public/                  # Archivos estáticos (CSS, JavaScript, imágenes, etc.)
+│   ├── css/
+│   ├── js/
+│   ├── img/
+│   └── ...
+│
+├── app.js                   # Archivo principal de la aplicación
+│
+└── package.json             # Archivo de configuración de npm y dependencias
+

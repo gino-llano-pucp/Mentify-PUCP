@@ -1,0 +1,1 @@
+mysql -h mentoring.cqaz4i5mrupx.us-east-1.rds.amazonaws.com -u admin -p MentifyNuevo < /Users/branny/Desktop/chistesoft-frontend/BackupBD/Backups/backupBD04_07.sql

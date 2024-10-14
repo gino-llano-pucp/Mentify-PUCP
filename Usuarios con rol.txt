@@ -1,0 +1,26 @@
+Administrador
+a20191088@pucp.edu.pe
+aA5S54Da
+
+Coordinador de facultad(Ciencias e Ingeniería)
+julio.delgado@pucp.edu.pe
+566f4f83fc
+
+Coordinador de programa(Ingeniería Informática)
+juliodelgadov65@gmail.com
+9b98cdf49d
+
+Alumno(Ingeniería Informática)
+walyermercedes@gmail.com
+d6f2dd3224
+
+Responsable de Bienestar (Ciencias e Ingenieria)
+a20202467@pucp.edu.pe
+82b11c38e0
+
+Coordinador de facultad (EEGGCC)
+75346213@continental.edu.pe
+cd8b11dca0
+
+Responsable de Bienestar (EEGGCC)
+alex.pan@pucp.edu.pe

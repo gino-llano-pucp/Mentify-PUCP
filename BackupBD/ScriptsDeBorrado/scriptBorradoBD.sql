@@ -1,0 +1,47 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
+TRUNCATE TABLE `MentifyNuevo`.`AlumnoSesionCita`;
+TRUNCATE TABLE `MentifyNuevo`.`AsignacionTipoTutoria`;
+TRUNCATE TABLE `MentifyNuevo`.`AsignacionTutorAlumno`;
+TRUNCATE TABLE `MentifyNuevo`.`AsistenciaCita`;
+TRUNCATE TABLE `MentifyNuevo`.`Audit`;
+TRUNCATE TABLE `MentifyNuevo`.`CompromisoCita`;
+TRUNCATE TABLE `MentifyNuevo`.`Derivacion`;
+TRUNCATE TABLE `MentifyNuevo`.`Disponibilidad`;
+TRUNCATE TABLE `MentifyNuevo`.`Encuesta`;
+TRUNCATE TABLE `MentifyNuevo`.`EncuestaMaestra`;
+TRUNCATE TABLE `MentifyNuevo`.`ErrorLogs`;
+-- TRUNCATE TABLE `MentifyNuevo`.`EstadoCita`;
+-- TRUNCATE TABLE `MentifyNuevo`.`EstadoCompromisoCita`;
+-- TRUNCATE TABLE `MentifyNuevo`.`EstadoEncuesta`;
+-- TRUNCATE TABLE `MentifyNuevo`.`EstadoEncuestaMaestra`;
+-- TRUNCATE TABLE `MentifyNuevo`.`EstadoSolicitudTutorFijo`;
+TRUNCATE TABLE `MentifyNuevo`.`Facultad`;
+TRUNCATE TABLE `MentifyNuevo`.`HistorialCitas`;
+TRUNCATE TABLE `MentifyNuevo`.`HistoricoEstudiante`;
+-- TRUNCATE TABLE `MentifyNuevo`.`Institucion`;
+TRUNCATE TABLE `MentifyNuevo`.`Notificaciones`;
+-- TRUNCATE TABLE `MentifyNuevo`.`Opcion`;
+-- TRUNCATE TABLE `MentifyNuevo`.`OpcionSidebar`;
+TRUNCATE TABLE `MentifyNuevo`.`PasswordResetToken`;
+-- TRUNCATE TABLE `MentifyNuevo`.`Pregunta`;
+TRUNCATE TABLE `MentifyNuevo`.`Programa`;
+TRUNCATE TABLE `MentifyNuevo`.`Respuesta`;
+TRUNCATE TABLE `MentifyNuevo`.`ResultadoCita`;
+-- TRUNCATE TABLE `MentifyNuevo`.`Rol`;
+TRUNCATE TABLE `MentifyNuevo`.`Roles_Usuario`;
+-- TRUNCATE TABLE `MentifyNuevo`.`RolOpciones`;
+-- TRUNCATE TABLE `MentifyNuevo`.`SequelizeMeta`;
+TRUNCATE TABLE `MentifyNuevo`.`SesionCita`;
+TRUNCATE TABLE `MentifyNuevo`.`SolicitudTutorFijo`;
+-- TRUNCATE TABLE `MentifyNuevo`.`TipoFormato`;
+-- TRUNCATE TABLE `MentifyNuevo`.`TipoModalidad`;
+-- TRUNCATE TABLE `MentifyNuevo`.`TipoObligatoriedad`;
+-- TRUNCATE TABLE `MentifyNuevo`.`TipoPermanencia`;
+-- TRUNCATE TABLE `MentifyNuevo`.`TipoTutor`;
+TRUNCATE TABLE `MentifyNuevo`.`TipoTutoria`;
+TRUNCATE TABLE `MentifyNuevo`.`UnidadAcademica`;
+TRUNCATE TABLE `MentifyNuevo`.`Usuario`;
+
+SET FOREIGN_KEY_CHECKS = 1;
+

@@ -1,0 +1,64 @@
+- name: Setup EC2 instance with Docker, Nginx, and Certbot
+  hosts: new_instance
+  become: yes
+  vars:
+    repo_url: "https://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@github.com/rmdezz/chistesoft-frontend.git"
+    repo_dest: "/home/ubuntu/app"
+
+  tasks:
+    - name: Update and install dependencies
+      apt:
+        update_cache: yes
+
+    - name: Install Docker and Docker Compose
+      apt:
+        name: 
+          - docker.io
+          - docker-compose
+        state: present
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Install Certbot and Nginx plugin
+      apt:
+        name:
+          - certbot
+          - python3-certbot-nginx
+        state: present
+
+    - name: Obtain SSL certificates
+      command: certbot --nginx --email your-email@example.com --agree-tos --no-eff-email -d yourdomain.com
+
+    - name: Ensure the app directory exists
+      file:
+        path: "{{ repo_dest }}"
+        state: directory
+
+    - name: Clone the repository
+      git:
+        repo: "{{ repo_url }}"
+        dest: "{{ repo_dest }}"
+        version: main # Cambia esto si necesitas clonar una rama diferente
+
+    - name: Copy Docker Compose file
+      copy:
+        src: ./docker-compose.yml
+        dest: "{{ repo_dest }}/docker-compose.yml"
+
+    - name: Copy Backend Dockerfile
+      copy:
+        src: ./Dockerfile.backend
+        dest: "{{ repo_dest }}/Dockerfile.backend"
+
+    - name: Copy Frontend Dockerfile
+      copy:
+        src: ./Dockerfile.frontend
+        dest: "{{ repo_dest }}/Dockerfile.frontend"
+
+    - name: Build and start Docker containers
+      shell: |
+        cd {{ repo_dest }}
+        docker-compose up -d
